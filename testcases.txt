@@ -1,0 +1,41 @@
+1. Complex Multi-Topic Medical Case Test (Handling Multi-Focus Text)
+Objective: Evaluate how well the summarizer extracts key points from a text discussing multiple clinical findings and management approaches.
+
+Input Text:
+“A 58-year-old male with a history of ischemic heart disease and chronic kidney disease presented with chest discomfort and shortness of breath. Initial ECG showed T-wave inversions in the inferior leads, and troponin I was elevated at 1.8 ng/mL. Coronary angiography revealed 80% stenosis in the mid-right coronary artery. The patient was managed conservatively with dual antiplatelet therapy, a beta-blocker, and a high-intensity statin. In addition, his renal function was monitored closely due to a baseline creatinine of 2.1 mg/dL. Echocardiography showed mild left ventricular systolic dysfunction with an ejection fraction of 45%. He was also noted to have mild pulmonary hypertension with a pulmonary artery systolic pressure of 40 mmHg. The patient’s blood pressure remained well-controlled on ACE inhibitors. After 72 hours of observation and medical therapy, he was discharged in stable condition with outpatient follow-up scheduled in 1 week. At 30-day follow-up, he reported adherence to medications with no recurrence of symptoms. Repeat echocardiography demonstrated stable left ventricular function and no worsening of pulmonary hypertension.”
+
+
+
+2. Narrative Discharge Summary Test (Handling Sequential Events with Interventions)
+Objective: Assess the summarizer’s performance on a long discharge summary that narrates sequential clinical events.
+
+Input Text:
+“A 65-year-old female with a history of hypertension and diabetes mellitus was admitted for evaluation of progressive shortness of breath over the last 2 weeks. On admission, her oxygen saturation was 90% on room air, and physical examination revealed bilateral crackles. Chest X-ray showed pulmonary congestion, and echocardiography confirmed reduced left ventricular ejection fraction of 35%. Intravenous furosemide was administered, leading to significant diuresis and improvement in her respiratory status. Despite initial improvement, the patient experienced an episode of atrial fibrillation with rapid ventricular response, requiring rate control with intravenous diltiazem. Anticoagulation was initiated with low-molecular-weight heparin and transitioned to oral warfarin. Over the next 48 hours, her condition stabilized, and she was switched to oral medications. Repeat echocardiography showed mild improvement in ejection fraction to 40%. She was discharged on day 5 with appropriate medications, including beta-blockers, ACE inhibitors, and anticoagulation. At 30-day follow-up, she reported no further episodes of atrial fibrillation, and her heart failure symptoms were well controlled.”
+
+
+3. Long Research Abstract Test (Scientific/Technical Content Extraction)
+Objective: Test how well the summarizer extracts key information from a long scientific or research abstract.
+
+ Input Text:
+“Background: Acute myocardial infarction (AMI) is a leading cause of morbidity and mortality worldwide. Advances in reperfusion therapy have improved outcomes, but timely intervention remains critical. This study aimed to evaluate the effectiveness of primary percutaneous coronary intervention (PCI) compared to thrombolytic therapy in reducing 30-day mortality. Methods: A multicenter, randomized controlled trial was conducted across 10 hospitals, enrolling 1,500 patients with ST-elevation myocardial infarction (STEMI). Patients were randomly assigned to undergo either primary PCI or receive thrombolysis within 6 hours of symptom onset. The primary endpoint was 30-day all-cause mortality. Secondary endpoints included rates of reinfarction, stroke, and major bleeding. Results: The PCI group demonstrated significantly lower 30-day mortality (5.1%) compared to the thrombolysis group (8.7%, p<0.01). Rates of reinfarction and stroke were also lower in the PCI group. Major bleeding rates were comparable between the groups. Conclusion: Primary PCI is superior to thrombolysis in reducing 30-day mortality and improving overall clinical outcomes in patients with STEMI.”
+
+
+
+4. Highly Redundant Clinical Documentation Test (Managing Redundant and Repetitive Information)
+Objective: Ensure the summarizer can handle redundant and repetitive information effectively.
+
+Input Text:
+“The patient was admitted with severe chest pain that radiated to his left arm. The chest pain was associated with diaphoresis and shortness of breath. ECG revealed ST elevation in leads V1-V4. The patient was diagnosed with an anterior wall myocardial infarction. Coronary angiography confirmed 90% stenosis in the proximal left anterior descending artery. The patient underwent primary percutaneous coronary intervention with drug-eluting stent placement. Following the procedure, the chest pain resolved, and he was monitored in the cardiac intensive care unit. The patient reported that the chest pain improved post-procedure. He was discharged on day 4 with dual antiplatelet therapy, beta-blockers, and high-intensity statins. At 30-day follow-up, the patient had no recurrence of chest pain and remained asymptomatic. The chest pain did not return after discharge, and he continued to do well with his prescribed medications.”
+
+ Test Case 5: Long Clinical Case Report (Complex Case with Multiple Diagnoses and Interventions)
+Objective: Evaluate the summarizer’s ability to condense a detailed, multi-stage clinical narrative with multiple diagnoses, interventions, and outcomes.
+
+Input Text:
+“A 72-year-old male with a past medical history of hypertension, type 2 diabetes mellitus, chronic obstructive pulmonary disease (COPD), and stage 3 chronic kidney disease presented to the emergency department with worsening shortness of breath, productive cough, and intermittent chest tightness for the past 5 days. His initial vital signs showed a blood pressure of 145/90 mmHg, heart rate of 115 bpm, respiratory rate of 28 breaths per minute, and oxygen saturation of 89% on room air. Physical examination revealed decreased air entry bilaterally with expiratory wheezing and scattered crackles. Laboratory results showed leukocytosis with a WBC count of 14,000/µL, elevated serum creatinine of 2.0 mg/dL (baseline 1.4 mg/dL), and mild hyperkalemia of 5.3 mEq/L.
+
+Chest X-ray demonstrated bilateral infiltrates consistent with pneumonia, and an arterial blood gas analysis showed respiratory acidosis with pH 7.28, pCO2 58 mmHg, and HCO3 28 mEq/L. He was started on intravenous antibiotics (ceftriaxone and azithromycin) for community-acquired pneumonia and bronchodilators for COPD exacerbation. Due to worsening hypoxia despite supplemental oxygen, the patient was initiated on non-invasive positive pressure ventilation (NIPPV). His renal function worsened, requiring nephrology consultation, but he did not require dialysis.
+
+Over the next 48 hours, his respiratory status improved, and his oxygen requirement decreased. Repeat chest X-ray showed clearing of infiltrates. Serum creatinine gradually returned to baseline, and potassium normalized. He was transitioned to oral antibiotics and weaned off NIPPV. On day 5, he was discharged with instructions to continue antibiotics, inhalers, and home oxygen therapy.
+
+At 30-day follow-up, the patient reported improved breathing and adherence to prescribed medications. Repeat pulmonary function tests demonstrated stable COPD, and renal function remained stable. He was advised to continue follow-up with pulmonology and nephrology to monitor his chronic conditions.”
+
